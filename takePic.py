@@ -1,11 +1,12 @@
 from gpiozero import MotionSensor
-from picamera import PiCamera
+
 from time import sleep
 
-camera = PiCamera()
-pir = MotionSensor(4)
 
+pir = MotionSensor(4)
+i = 0
 while True:
     pir.wait_for_motion()
-    print("You moved")
+    i=i+1
+    print("You moved"+str(i))
     pir.wait_for_no_motion()
