@@ -71,17 +71,18 @@ body {
     text-align: center; 
     margin-top: 30px; 
 }
-.overlay .burger{
+.overlay input
+{
   display: block;
   width: 40px;
   height: 32px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: -7px;
+  left: -5px;
   
   cursor: pointer;
   
-  /*opacity: 0; /* hide this */
+  opacity: 0; /* hide this */
   z-index: 2;
 }
 .overlay a {
@@ -99,6 +100,7 @@ body {
 }
 
 .card1 {
+    /*background-image: url(tombRaiderPic.jpeg);*/
     color:#ffffff;
     width: 100vw;
     position: relative;
@@ -153,7 +155,7 @@ body {
     color: #000000;
     border-radius: 5px;
     border: none;
-    padding: 12px;
+    padding: 2%;
     cursor: pointer;
     text-decoration: none;
 }
